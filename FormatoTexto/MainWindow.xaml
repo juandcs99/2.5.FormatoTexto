@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FormatoTexto"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Formatear texto" Height="280" Width="590" Icon="assets/256.ico">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="30,60,0,0" TextWrapping="Wrap" Text="Texto a cambiar" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="30,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontSize="13" RenderTransformOrigin="0.608,0.544"/>
+
+
     </Grid>
 </Window>
