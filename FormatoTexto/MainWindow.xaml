@@ -8,7 +8,14 @@
         Title="Formatear texto" Height="280" Width="590" Icon="assets/256.ico">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="30,60,0,0" TextWrapping="Wrap" Text="Texto a cambiar" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="19" Margin="30,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontSize="13" RenderTransformOrigin="0.608,0.544"/>
+        <TextBox x:Name="TextoACambiarTextBox" HorizontalAlignment="Left" Height="65" Margin="30,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" FontSize="13" RenderTransformOrigin="0.5,0.5" TextChanged="TextoACambiarTextBox_TextChanged"/>
+        <CheckBox x:Name="NegritaCheckBox" Content="Negrita" HorizontalAlignment="Left" Margin="201,76,0,0" VerticalAlignment="Top" FontWeight="Bold" Unchecked="NegritaCheckBox_UnChecked" Checked="NegritaCheckBox_Checked"/>
+        <CheckBox x:Name="CursivaCheckBox" Content="Cursiva" HorizontalAlignment="Left" Margin="296,76,0,0" VerticalAlignment="Top" FontStyle="Italic" RenderTransformOrigin="0.856,0.49" Unchecked="CursivaCheckBox_UnChecked" Checked="CursivaCheckBox_Checked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="400,75,0,0" TextWrapping="Wrap" Text="Color del texto" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextoCambiadoTextBox" TextAlignment="Center" IsReadOnly="True" HorizontalAlignment="Left" Height="24" Margin="30,175,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="512" FontSize="14" Background="#FFD3D89D"/>
+        <RadioButton x:Name="AzulRadioButton" Content="Azul" IsChecked="true" HorizontalAlignment="Left" Margin="494,56,0,0" VerticalAlignment="Top" GroupName="color" Checked="AzulRadioButton_Checked"/>
+        <RadioButton x:Name="VerdeRadioButton" Content="Verde" HorizontalAlignment="Left" Margin="493,76,0,0" VerticalAlignment="Top" GroupName="color" Checked="VerdeRadioButton_Checked"/>
+        <RadioButton x:Name="RojoRadioButton" Content="Rojo" HorizontalAlignment="Left" Margin="493,96,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.084,0.488" GroupName="color" Checked="RojoRadioButton_Checked"/>
 
 
     </Grid>
